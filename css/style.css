@@ -20,7 +20,7 @@ HTML, BODY {
 
 header {
     background: url('../images/cover-1.png') no-repeat center center / cover;
-    height: 750px;
+    height: 740px;
     width: 100%;
 }
 
@@ -31,6 +31,11 @@ a {
 
 a:hover {
     font-weight: bold;
+}
+
+h3 {
+    color: black;
+    font-size: 25px;
 }
 
 h2 {
@@ -114,6 +119,7 @@ li {
     border-radius: 15px;
     border-style: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn-outline {
@@ -199,15 +205,88 @@ li {
     gap: 20px;
 }
 
+/* Services */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services > img {
+    width: 40%;
+    margin: 70px 40px 70px 40px;
+    height: 30px;
+}
+
+.services-names h3 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.services-names {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.s-1,
+.s-2,
+.s-3,
+.s-4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+.s-1 > img,
+.s-3 > img {
+    height: 180px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.s-2 > img,
+.s-4 > img {
+    width: 170px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+
+
+/* Portfolio */
+
+.portfolio {
+    display: block;
+}
+
+.p-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.p-1 > img {
+    width: 40%;
+    margin: 70px 40px 70px 40px;
+    height: 30px;
+}
 
 /* Media Queries */
 
 @media (max-width: 960px) {
+    /* Headers */
+
     h1 {
         font-size: 25px;
     }
     h2 {
         font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
     }
     .navbar > ul {
         display: none;
@@ -237,8 +316,19 @@ li {
     header {
         height: 500px;
     }
+
+    /* Services */
+
+    .services-names {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
+@media (max-width: 760px) {
+    .services-names {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
