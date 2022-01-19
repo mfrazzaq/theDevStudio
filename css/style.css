@@ -33,6 +33,11 @@ a:hover {
     font-weight: bold;
 }
 
+h4 {
+    color: black;
+    font-size: 18px;
+}
+
 h3 {
     color: black;
     font-size: 25px;
@@ -263,16 +268,81 @@ li {
     display: block;
 }
 
-.p-1 {
+.p-1,
+.p-2,
+.p-3 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.p-1 > img {
+.p-2  > div{
+    flex-direction: row-reverse;    
+}
+
+.p-2 .text-and-buttons {
+    text-align: right;
+    align-items: flex-end;
+    /* justify-self: flex-end; */
+}
+
+.p-1 > img,
+.p-3 > img,
+.p-4 > img {
     width: 40%;
     margin: 70px 40px 70px 40px;
     height: 30px;
 }
+
+.p-1 > div,
+.p-2 > div,
+.p-3 > div {
+    display: flex;
+    gap: 70px;
+}
+
+.btn-google {
+    background: black;
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-google > img {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-google .text > h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.btn-google .text > h4 {
+    color: white;
+    font-weight: normal;
+    text-align: start;
+}
+
+.text-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 120px;
+}
+
+.text-and-buttons > h1{
+    color: black;
+    text-transform: uppercase;
+}
+.text-and-buttons > h3{
+    color: black;
+    font-weight: lighter;
+}
+
 
 /* Media Queries */
 
