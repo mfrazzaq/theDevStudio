@@ -300,9 +300,11 @@ li {
 .p-3 > div {
     display: flex;
     gap: 70px;
+    margin: 20px;
 }
 
-.btn-google {
+.btn-google,
+.btn-apple {
     background: black;
     padding: 10px 20px;
     display: flex;
@@ -311,17 +313,21 @@ li {
     justify-content: center;
 }
 
-.btn-google > img {
+.btn-google > img,
+.btn-apple > img {
     width: 40px;
     height: 40px;
 }
 
-.btn-google .text > h3 {
+.btn-google .text > h3,
+.btn-apple .text > h3 {
     color: white;
     font-weight: bold;
+    text-align: left;
 }
 
-.btn-google .text > h4 {
+.btn-google .text > h4,
+.btn-apple .text > h4 {
     color: white;
     font-weight: normal;
     text-align: start;
@@ -331,7 +337,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 120px;
+    margin-top: 60px;
 }
 
 .text-and-buttons > h1{
@@ -341,6 +347,11 @@ li {
 .text-and-buttons > h3{
     color: black;
     font-weight: lighter;
+    width: 80%;
+}
+
+.mockup {
+    height: 600px;
 }
 
 
@@ -357,6 +368,9 @@ li {
     }
     h3 {
         font-size: 18px;
+    }
+    h4 {
+        font-size: 12px;
     }
     .navbar > ul {
         display: none;
@@ -391,6 +405,44 @@ li {
 
     .services-names {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* Portfolio */
+
+    .text-and-buttons {
+        align-items: center;
+        text-align: center;
+    }
+
+    .p-2 .text-and-buttons {
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn-google img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .btn-apple img {
+        height: 40px;
+        width: 45px;
+    }
+
+
+
+    .p-1 > div,
+    .p-2 > div,
+    .p-3 > div {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+    }
+
+    .mockup {
+        height: 400px;
+        width: 200px;
+        align-self: center;
     }
 }
 
