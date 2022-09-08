@@ -1,8 +1,11 @@
 const btn = document.getElementById("menu-button");
 const nav = document.getElementById("mobile-menu");
 const requestAQuote = document.getElementById("quote");
-const body = document.getElementsByName("body");
-const navbar = document.getElementById("navbar");
+const home = document.getElementsByClassName("nav-home");
+const services = document.getElementsByClassName("nav-services");
+const work = document.getElementsByClassName("nav-work");
+const clients = document.getElementsByClassName("nav-clients");
+const contact = document.getElementsByClassName("nav-contact");
 
 function onToggle() {
   btn.classList.toggle("open");
@@ -14,11 +17,11 @@ function onRequestingAQuote() {
   document.getElementById("contact").scrollIntoView();
 }
 
-function onScroll() {
-  console.log("Scrolled");
-  navbar.classList.toggle("fix");
-}
-
 btn.addEventListener("click", onToggle);
 requestAQuote.addEventListener("click", onRequestingAQuote);
-body.addEventListener("scroll", onScroll);
+services.onclick = onToggle;
+home.addEventListener("click", onToggle);
+services.addEventListener("click", onToggle);
+work.addEventListener("click", onToggle);
+clients.addEventListener("click", onToggle);
+contact.addEventListener("click", onToggle);
