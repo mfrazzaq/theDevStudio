@@ -11,16 +11,16 @@
   <body>
     <!--Hook-->
     <header>
-      <div class="fix">
+      <div id="navbar">
         <div class="nav">
-          <h2 class="brandName">The Dev-Studio</h2>
+          <h2 class="brandName">Flutter Dev-Studio</h2>
           <div class="navbar">
             <ul>
               <li><a href="" class="selected">Home</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Work</a></li>
-              <li><a href="">Our Clients</a></li>
-              <li><a href="">Contact us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#clients">Our Clients</a></li>
+              <li><a href="#contact">Contact us</a></li>
             </ul>
           </div>
           <button class="hamburger" id="menu-button">
@@ -33,10 +33,10 @@
       <div class="mobile-menu hidden" id="mobile-menu">
         <ul>
           <li><a href="" class="selected">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Work</a></li>
-          <li><a href="">Our Clients</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#clients">Our Clients</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
       <div class="hook">
@@ -50,11 +50,11 @@
           IS YOUR BUSINESS READY FOR A ROBUST APP? SAVE UPTO 60% BY DEVELOPING
           YOUR BUSINESS APP WITH US.
         </div>
-        <button class="btn btn-outline">Request a quote</button>
+        <button class="btn btn-outline" id="quote">Contact us</button>
       </div>
     </header>
 
-    <section class="services">
+    <section class="services" id="services">
       <img src="./images/line.svg" alt="" />
       <div class="services-names">
         <div class="s-1">
@@ -80,20 +80,25 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="work">
       <div class="p-1">
         <img src="./images/line.svg" alt="" />
         <div>
           <div class="text-and-buttons">
             <h1>Oxy</h1>
             <h3>Mobile TopUp, Recharges and Packages Service for SMEs.</h3>
-            <button class="btn btn-google">
-              <img src="./images/google-play.png" alt="" class="logo" />
-              <div class="text">
-                <h4>Get it on</h4>
-                <h3>Google Play</h3>
-              </div>
-            </button>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.oxytelecom.oxy"
+              target="#"
+            >
+              <button class="btn btn-google">
+                <img src="./images/google-play.png" alt="" class="logo" />
+                <div class="text">
+                  <h4>Get it on</h4>
+                  <h3>Google Play</h3>
+                </div>
+              </button>
+            </a>
           </div>
           <img src="./images/oxy-mockup.png" alt="" class="mockup" />
         </div>
@@ -107,20 +112,30 @@
               Labarile is a language coaching company that helps people learn
               English.
             </h3>
-            <button class="btn btn-google">
-              <img src="./images/google-play.png" alt="" class="logo" />
-              <div class="text">
-                <h4>Get it on</h4>
-                <h3>Google Play</h3>
-              </div>
-            </button>
-            <button class="btn btn-apple">
-              <img src="./images/Apple-logo.png" alt="" class="logo" />
-              <div class="text">
-                <h4>Download on the</h4>
-                <h3>App Store</h3>
-              </div>
-            </button>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.coaching.labarile&hl=es_US&gl=US"
+              target="#"
+            >
+              <button class="btn btn-google">
+                <img src="./images/google-play.png" alt="" class="logo" />
+                <div class="text">
+                  <h4>Get it on</h4>
+                  <h3>Google Play</h3>
+                </div>
+              </button>
+            </a>
+            <a
+              href="https://apps.apple.com/tt/app/labarile/id1601632464"
+              target="#"
+            >
+              <button class="btn btn-apple">
+                <img src="./images/Apple-logo.png" alt="" class="logo" />
+                <div class="text">
+                  <h4>Download on the</h4>
+                  <h3>App Store</h3>
+                </div>
+              </button>
+            </a>
           </div>
           <img src="./images/labarile-mockup.png" alt="" class="mockup" />
         </div>
@@ -131,22 +146,32 @@
           <div class="text-and-buttons">
             <h1>Gustavo Shop</h1>
             <h3>Helping Customers Get Online Appointed To A Barbershop</h3>
-            <button class="btn btn-google">
-              <img src="./images/google-play.png" alt="" class="logo" />
-              <div class="text">
-                <h4>Get it on</h4>
-                <h3>Google Play</h3>
-              </div>
-            </button>
-            <button class="btn btn-apple">
-              <img src="./images/Apple-logo.png" alt="" class="logo" />
-              <div class="text">
-                <h4>Download on the</h4>
-                <h3>App Store</h3>
-              </div>
-            </button>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.gustavobarbershop.gustavobarber&hl=es_US&gl=US"
+              target="#"
+            >
+              <button class="btn btn-google">
+                <img src="./images/google-play.png" alt="" class="logo" />
+                <div class="text">
+                  <h4>Get it on</h4>
+                  <h3>Google Play</h3>
+                </div>
+              </button>
+            </a>
+            <a
+              href="https://apps.apple.com/be/app/gustavo-barbershop/id1564554359?l=fr"
+              target="#"
+            >
+              <button class="btn btn-apple">
+                <img src="./images/Apple-logo.png" alt="" class="logo" />
+                <div class="text">
+                  <h4>Download on the</h4>
+                  <h3>App Store</h3>
+                </div>
+              </button>
+            </a>
           </div>
-          <img src="./images/barbershop-mockup.png" alt="" class="mockup" />
+          <img src="./images/gbsm.png" alt="" class="mockup" />
         </div>
         <img src="./images/line.svg" alt="" />
       </div>
@@ -178,7 +203,7 @@
         </div>
         <img src="./images/line.svg" alt="">
     </section> -->
-    <section class="client-root">
+    <section class="client-root" id="clients">
       <div class="clients">
         <div>
           <img
@@ -188,16 +213,19 @@
             class="inverted-commas"
           />
           <p class="review">
-            They developed great app for me! The communication went very well
-            and could understand all my requirements without problem.
+            The project went very well, Fazeel is an amazing developer and
+            developed a great app for me! The communication went very well and
+            could understand all my requirements without problem! He also
+            finished way before the deadline and the results were just amazing!!
+            I'm happy to have worked with him and I really recommend him.
           </p>
           <img
-            src="../images/fazeelRazzaq.jpg"
+            src="../images/rida.png"
             alt="Client Image"
             ,
             class="client-image"
           />
-          <h5>Fazeel Razzaq</h5>
+          <h5>Rida Hattouma</h5>
         </div>
         <div>
           <img
@@ -207,16 +235,18 @@
             class="inverted-commas"
           />
           <p class="review">
-            They developed great app for me! The communication went very well
-            and could understand all my requirements without problem.
+            Great work, very satisfied. Fazilrazzaq is very communicative and
+            responsive. He is very professional and has immense knowledge in
+            developing Apps. His approach was best while understanding the
+            requirements and his delivery was before time. Highly recommended.
           </p>
           <img
-            src="../images/fazeelRazzaq.jpg"
+            src="../images/tajudeen.jpg"
             alt="Client Image"
             ,
             class="client-image"
           />
-          <h5>Fazeel Razzaq</h5>
+          <h5>Tajudeen Abdul Azeez</h5>
         </div>
         <div>
           <img
@@ -226,24 +256,27 @@
             class="inverted-commas"
           />
           <p class="review">
-            They developed great app for me! The communication went very well
-            and could understand all my requirements without problem.
+            Great work, very satisfied. I found him very professional. His
+            approach was best while understanding the requirements and his
+            delivery was before time. I would surely not only recommend him but
+            also work with him in the future. Highly recommended.
           </p>
           <img
-            src="../images/fazeelRazzaq.jpg"
+            src="../images/qasim.png"
             alt="Client Image"
             ,
             class="client-image"
           />
-          <h5>Fazeel Razzaq</h5>
+          <h5>Qasim Hafeez</h5>
         </div>
       </div>
       <img src="./images/line.svg" alt="" />
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div>
         <div class="content">
-          <div class="contact-and-review">
+          <div><h3>Contact us</h3></div>
+          <!-- <div class="contact-and-review">
             <div class="contact-info">
               <input type="text" placeholder="Your Name" />
               <input type="email" placeholder="Your email address" />
@@ -269,11 +302,23 @@
                 well and could understand all my requirements without problem.
               </p>
             </div>
-          </div>
+          </div> -->
           <div class="social">
-            <a href="#"><img src="/images/social/fiverr.png" alt="fiverr" /></a>
-            <a href="#"><img src="/images/social/linkedin.png" alt="in" /></a>
-            <a href="#"><img src="/images/social/upwork.png" alt="up" /></a>
+            <a
+              href="https://www.fiverr.com/fazilrazzaq/do-flutter-mobile-app-development-and-flutter-ui-or-be-your-flutter-developer"
+              target="#"
+              ><img src="/images/social/fiverr.png" alt="fiverr"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/fazeel-razzaq-a66444156/"
+              target="#"
+              ><img src="/images/social/linkedin.png" alt="in"
+            /></a>
+            <a
+              href="https://www.upwork.com/freelancers/~0186bd88efd4965cd9"
+              target="#"
+              ><img src="/images/social/upwork.png" alt="up"
+            /></a>
           </div>
         </div>
         <img src="./images/line.svg" alt="" />

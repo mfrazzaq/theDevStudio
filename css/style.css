@@ -18,6 +18,7 @@ BODY {
   font-family: "Montserrat", sans-serif;
   line-height: 1.4;
   color: #000;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -63,9 +64,13 @@ h1 {
   overflow: hidden;
 }
 
-/* .fix {
-    position: fixed;
-} */
+.fix {
+  position: fixed;
+  background-color: #14213d;
+  height: 100px;
+  top: 0;
+  width: 100%;
+}
 
 /* Header */
 header > div {
@@ -100,7 +105,7 @@ li {
 
 .hook {
   width: 70%;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .hook > h1 {
@@ -423,19 +428,21 @@ li {
 }
 
 .clients {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .clients > div {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
   gap: 30px;
   background-color: var(--color-grey);
   margin: 20px;
   padding: 20px;
   text-align: center;
+  justify-items: center;
   box-shadow: 2px 2px 1px rgb(0, 0, 0, 0.16);
   border-radius: 8px;
+  height: 500px;
 }
 .clients > div > .inverted-commas {
   height: 50px;
@@ -459,6 +466,7 @@ li {
 .content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .content > .social {
   margin-top: 20px;
@@ -541,6 +549,11 @@ li {
   width: 70px;
   object-fit: cover;
   margin: 20px 0px 0px 20px;
+}
+
+.content > div > h3 {
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 /* Media Queries */
@@ -643,6 +656,10 @@ li {
   .contact-and-review {
     grid-auto-flow: column;
     grid-template-rows: 1fr 1fr;
+  }
+  .contact-and-review > .contact-info {
+    width: 100%;
+    align-content: center;
   }
   .btn-contact {
     background-color: var(--color-secondary);
